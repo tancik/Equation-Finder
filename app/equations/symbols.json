@@ -1,0 +1,619 @@
+[
+    {   
+        "name": "Roman",
+        "letter": [
+            {
+                "symbol": "a",
+                "disc": "Greek small letter alpha"
+            },
+            {
+                "symbol": "b",
+                "disc": "Greek small letter beta"
+            },
+            {
+                "symbol": "c",
+                "disc": "Greek small letter gamma"
+            },
+            {
+                "symbol": "d",
+                "disc": "Greek small letter delta"
+            },
+            {
+                "symbol": "e",
+                "disc": "Greek small letter epsilon"
+            },
+            {
+                "symbol": "f",
+                "disc": "Greek small letter zeta"
+            },
+            {
+                "symbol": "g",
+                "disc": "Greek small letter eta"    
+            },
+            {
+                "symbol": "h",
+                "disc": "Greek small letter theta"
+            },
+            {
+                "symbol": "i",
+                "disc": "Greek small letter iota"      
+            },
+            {
+                "symbol": "j",
+                "disc": "Greek small letter kappa"      
+            },
+            {
+                "symbol": "k",
+                "disc": "Greek small letter lambda"      
+            },
+            {
+                "symbol": "l",
+                "disc": "Greek small letter mu"      
+            },
+            {
+                "symbol": "m",
+                "disc": "Greek small letter nu"      
+            },
+            {
+                "symbol": "n",
+                "disc": "Greek small letter xi"      
+            },
+            {
+                "symbol": "o",
+                "disc": "Greek small letter omicron"      
+            },
+            {
+                "symbol": "p",
+                "disc": "Greek small letter pi"      
+            },
+            {
+                "symbol": "q",
+                "disc": "Greek small letter rho"      
+            },
+            {
+                "symbol": "r",
+                "disc": "Greek small letter final sigma"      
+            },
+            {
+                "symbol": "s",
+                "disc": "Greek small letter sigma"      
+            },
+            {
+                "symbol": "t",
+                "disc": "Greek small letter tau"      
+            },
+            {
+                "symbol": "u",
+                "disc": "Greek small letter upsilon"      
+            },
+            {
+                "symbol": "v",
+                "disc": "Greek small letter phi"      
+            },
+            {
+                "symbol": "w",
+                "disc": "Greek small letter chi"      
+            },
+            {
+                "symbol": "x",
+                "disc": "Greek small letter psi"      
+            },
+            {
+                "symbol": "y",
+                "disc": "Greek small letter omega"      
+            },
+            {
+                "symbol": "z",
+                "disc": "Greek small letter theta symbol"      
+            }
+        ]
+    },
+    {   
+        "name": "Greek",
+        "letter": [
+            {
+                "symbol": "&alpha;",
+                "disc": "Greek small letter alpha"
+            },
+            {
+                "symbol": "&beta;",
+                "disc": "Greek small letter beta"
+            },
+            {
+                "symbol": "&gamma;",
+                "disc": "Greek small letter gamma"
+            },
+            {
+                "symbol": "&delta;",
+                "disc": "Greek small letter delta"
+            },
+            {
+                "symbol": "&epsilon;",
+                "disc": "Greek small letter epsilon"
+            },
+            {
+                "symbol": "&zeta;",
+                "disc": "Greek small letter zeta"
+            },
+            {
+                "symbol": "&eta;",
+                "disc": "Greek small letter eta"    
+            },
+            {
+                "symbol": "&theta;",
+                "disc": "Greek small letter theta"
+            },
+            {
+                "symbol": "&iota;",
+                "disc": "Greek small letter iota"      
+            },
+            {
+                "symbol": "&kappa;",
+                "disc": "Greek small letter kappa"      
+            },
+            {
+                "symbol": "&lambda;",
+                "disc": "Greek small letter lambda"      
+            },
+            {
+                "symbol": "&mu;",
+                "disc": "Greek small letter mu"      
+            },
+            {
+                "symbol": "&nu;",
+                "disc": "Greek small letter nu"      
+            },
+            {
+                "symbol": "&xi;",
+                "disc": "Greek small letter xi"      
+            },
+            {
+                "symbol": "&omicron;",
+                "disc": "Greek small letter omicron"      
+            },
+            {
+                "symbol": "&pi;",
+                "disc": "Greek small letter pi"      
+            },
+            {
+                "symbol": "&rho;",
+                "disc": "Greek small letter rho"      
+            },
+            {
+                "symbol": "&sigmaf;",
+                "disc": "Greek small letter final sigma"      
+            },
+            {
+                "symbol": "&sigma;",
+                "disc": "Greek small letter sigma"      
+            },
+            {
+                "symbol": "&tau;",
+                "disc": "Greek small letter tau"      
+            },
+            {
+                "symbol": "&upsilon;",
+                "disc": "Greek small letter upsilon"      
+            },
+            {
+                "symbol": "&phi;",
+                "disc": "Greek small letter phi"      
+            },
+            {
+                "symbol": "&chi;",
+                "disc": "Greek small letter chi"      
+            },
+            {
+                "symbol": "&psi;",
+                "disc": "Greek small letter psi"      
+            },
+            {
+                "symbol": "&omega;",
+                "disc": "Greek small letter omega"      
+            },
+            {
+                "symbol": "&thetasym;",
+                "disc": "Greek small letter theta symbol"      
+            },
+            {
+                "symbol": "&upsih;",
+                "disc": "Greek upsilon with hook symbol"      
+            },
+            {
+                "symbol": "&piv;",
+                "disc": "Greek pi symbol"
+            },
+            {
+                "symbol": "&Gamma;",
+                "disc": "Greek capital letter gamma"
+            },
+            {
+                "symbol": "&Delta;",
+                "disc": "Greek capital letter delta"
+            },
+            {
+                "symbol": "&Epsilon;",
+                "disc": "Greek capital letter epsilon"
+            },
+            {
+                "symbol": "&Zeta;",
+                "disc": "Greek capital letter zeta"
+            },
+            {
+                "symbol": "&Theta;",
+                "disc": "Greek capital letter theta"
+            },
+            {
+                "symbol": "&Lambda;",
+                "disc": "Greek capital letter lambda"
+            },
+            {
+                "symbol": "&Xi;",
+                "disc": "Greek capital letter xi"
+            },
+            {
+                "symbol": "&Pi;",
+                "disc": "Greek capital letter pi"
+            },
+            {
+                "symbol": "&Sigma;",
+                "disc": "Greek capital letter sigma"
+            },
+            {
+                "symbol": "&Phi;",
+                "disc": "Greek capital letter phi"
+            },
+            {
+                "symbol": "&Psi;",
+                "disc": "Greek capital letter psi"
+            },
+            {
+                "symbol": "&Omega;",
+                "disc": "Greek capital letter omega"
+            }
+        ]
+    },
+    {   
+        "name": "Relation symbols",
+        "letter": [
+            {
+                "symbol": "$$\\leq$$",
+                "disc": "Greek small letter alpha"
+            },
+            {
+                "symbol": "$$\\geq$$",
+                "disc": "Greek small letter beta"
+            },
+            {
+                "symbol": "$$\\equiv$$",
+                "disc": "Greek small letter gamma"
+            },
+            {
+                "symbol": "$$\\models$$",
+                "disc": "Greek small letter delta"
+            },
+            {
+                "symbol": "$$\\prec$$",
+                "disc": "Greek small letter delta"
+            },
+            {
+                "symbol": "$$\\succ$$",
+                "disc": "Greek small letter delta"
+            },
+            {
+                "symbol": "$$\\sim$$",
+                "disc": "Greek small letter delta"
+            },
+            {
+                "symbol": "$$\\perp$$",
+                "disc": "Greek small letter delta"
+            },
+            {
+                "symbol": "$$\\preceq$$",
+                "disc": "Greek small letter delta"
+            },
+            {
+                "symbol": "$$\\succeq$$",
+                "disc": "Greek small letter delta"
+            },
+            {
+                "symbol": "$$\\simeq$$",
+                "disc": "Greek small letter delta"
+            },
+            {
+                "symbol": "$$\\mid$$",
+                "disc": "Greek small letter delta"
+            },
+            {
+                "symbol": "$$\\ll$$",
+                "disc": "Greek small letter delta"
+            },
+            {
+                "symbol": "$$\\gg$$",
+                "disc": "Greek small letter delta"
+            },
+            {
+                "symbol": "$$\\asymp$$",
+                "disc": "Greek small letter delta"
+            },
+            {
+                "symbol": "$$\\parallel$$",
+                "disc": "Greek small letter delta"
+            },
+            {
+                "symbol": "$$\\subset$$",
+                "disc": "Greek small letter delta"
+            },
+            {
+                "symbol": "$$\\supset$$",
+                "disc": "Greek small letter delta"
+            },
+            {
+                "symbol": "$$\\approx$$",
+                "disc": "Greek small letter delta"
+            },
+            {
+                "symbol": "$$\\bowtie$$",
+                "disc": "Greek small letter delta"
+            },
+            {
+                "symbol": "$$\\subseteq$$",
+                "disc": "Greek small letter delta"
+            },
+            {
+                "symbol": "$$\\supseteq$$",
+                "disc": "Greek small letter delta"
+            },
+            {
+                "symbol": "$$\\cong$$",
+                "disc": "Greek small letter delta"
+            },
+            {
+                "symbol": "$$\\neq$$",
+                "disc": "Greek small letter delta"
+            },
+            {
+                "symbol": "$$\\smile$$",
+                "disc": "Greek small letter delta"
+            },
+            {
+                "symbol": "$$\\sqsubseteq$$",
+                "disc": "Greek small letter delta"
+            },
+            {
+                "symbol": "$$\\sqsupseteq$$",
+                "disc": "Greek small letter delta"
+            },
+            {
+                "symbol": "$$\\doteq$$",
+                "disc": "Greek small letter delta"
+            },
+            {
+                "symbol": "$$\\frown$$",
+                "disc": "Greek small letter delta"
+            },
+            {
+                "symbol": "$$\\in$$",
+                "disc": "Greek small letter delta"
+            },
+            {
+                "symbol": "$$\\ni$$",
+                "disc": "Greek small letter delta"
+            },
+            {
+                "symbol": "$$\\propto$$",
+                "disc": "Greek small letter delta"
+            },
+            {
+                "symbol": "$$<$$",
+                "disc": "Greek small letter delta"
+            },
+            {
+                "symbol": "$$>$$",
+                "disc": "Greek small letter delta"
+            },
+            {
+                "symbol": "$$\\vdash$$",
+                "disc": "Greek small letter delta"
+            },
+            {
+                "symbol": "$$\\dashv$$",
+                "disc": "Greek small letter delta"
+            }
+        ]
+    },
+    {   
+        "name": "Variable-sized symbols",
+        "letter": [
+            {
+                "symbol": "$$\\sum$$",
+                "disc": "Greek small letter alpha"
+            },
+            {
+                "symbol": "$$\\prod$$",
+                "disc": "Greek small letter beta"
+            },
+            {
+                "symbol": "$$\\coprod$$",
+                "disc": "Greek small letter gamma"
+            },
+            {
+                "symbol": "$$\\int$$",
+                "disc": "Greek small letter delta"
+            },
+            {
+                "symbol": "$$\\oint$$",
+                "disc": "Greek small letter delta"
+            },
+            {
+                "symbol": "$$\\bigcap$$",
+                "disc": "Greek small letter delta"
+            },
+            {
+                "symbol": "$$\\bigcup$$",
+                "disc": "Greek small letter delta"
+            },
+            {
+                "symbol": "$$\\bigsqcup$$",
+                "disc": "Greek small letter delta"
+            },
+            {
+                "symbol": "$$\\bigvee$$",
+                "disc": "Greek small letter delta"
+            },
+            {
+                "symbol": "$$\\bigwedge$$",
+                "disc": "Greek small letter delta"
+            },
+            {
+                "symbol": "$$\\bigodot$$",
+                "disc": "Greek small letter delta"
+            },
+            {
+                "symbol": "$$\\bigotimes$$",
+                "disc": "Greek small letter delta"
+            },
+            {
+                "symbol": "$$\\bigoplus$$",
+                "disc": "Greek small letter delta"
+            },
+            {
+                "symbol": "$$\\biguplus$$",
+                "disc": "Greek small letter delta"
+            }
+        ]
+    },
+    {   
+        "name": "Log-sized symbols",
+        "letter": [
+            {
+                "symbol": "$$\\arccos$$",
+                "disc": "Greek small letter alpha"
+            },
+            {
+                "symbol": "$$\\arcsin$$",
+                "disc": "Greek small letter beta"
+            },
+            {
+                "symbol": "$$\\arctan$$",
+                "disc": "Greek small letter gamma"
+            },
+            {
+                "symbol": "$$\\arg$$",
+                "disc": "Greek small letter delta"
+            },
+            {
+                "symbol": "$$\\cos$$",
+                "disc": "Greek small letter delta"
+            },
+            {
+                "symbol": "$$\\cosh$$",
+                "disc": "Greek small letter delta"
+            },
+            {
+                "symbol": "$$\\cot$$",
+                "disc": "Greek small letter delta"
+            },
+            {
+                "symbol": "$$\\coth$$",
+                "disc": "Greek small letter delta"
+            },
+            {
+                "symbol": "$$\\csc$$",
+                "disc": "Greek small letter delta"
+            },
+            {
+                "symbol": "$$\\deg$$",
+                "disc": "Greek small letter delta"
+            },
+            {
+                "symbol": "$$\\det$$",
+                "disc": "Greek small letter delta"
+            },
+            {
+                "symbol": "$$\\dim$$",
+                "disc": "Greek small letter delta"
+            },
+            {
+                "symbol": "$$\\exp$$",
+                "disc": "Greek small letter delta"
+            },
+            {
+                "symbol": "$$\\gcd$$",
+                "disc": "Greek small letter delta"
+            },
+            {
+                "symbol": "$$\\hom$$",
+                "disc": "Greek small letter beta"
+            },
+            {
+                "symbol": "$$\\inf$$",
+                "disc": "Greek small letter gamma"
+            },
+            {
+                "symbol": "$$\\ker$$",
+                "disc": "Greek small letter delta"
+            },
+            {
+                "symbol": "$$\\lg$$",
+                "disc": "Greek small letter delta"
+            },
+            {
+                "symbol": "$$\\lim$$",
+                "disc": "Greek small letter delta"
+            },
+            {
+                "symbol": "$$\\liminf$$",
+                "disc": "Greek small letter delta"
+            },
+            {
+                "symbol": "$$\\limsup$$",
+                "disc": "Greek small letter delta"
+            },
+            {
+                "symbol": "$$\\ln$$",
+                "disc": "Greek small letter delta"
+            },
+            {
+                "symbol": "$$\\log$$",
+                "disc": "Greek small letter delta"
+            },
+            {
+                "symbol": "$$\\max$$",
+                "disc": "Greek small letter delta"
+            },
+            {
+                "symbol": "$$\\min$$",
+                "disc": "Greek small letter delta"
+            },
+            {
+                "symbol": "$$\\Pr$$",
+                "disc": "Greek small letter delta"
+            },
+            {
+                "symbol": "$$\\sec$$",
+                "disc": "Greek small letter delta"
+            },
+            {
+                "symbol": "$$\\sin$$",
+                "disc": "Greek small letter beta"
+            },
+            {
+                "symbol": "$$\\sinh$$",
+                "disc": "Greek small letter gamma"
+            },
+            {
+                "symbol": "$$\\sup$$",
+                "disc": "Greek small letter delta"
+            },
+            {
+                "symbol": "$$\\tan$$",
+                "disc": "Greek small letter delta"
+            },
+            {
+                "symbol": "$$\\tanh$$",
+                "disc": "Greek small letter delta"
+            }
+        ]
+    }
+]

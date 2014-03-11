@@ -1,0 +1,126 @@
+[
+    {
+        "name": "Mass-energy equivalence", 
+        "rep": "E = mc^2",
+        "details": "In physics, mass–energy equivalence is the concept that the mass of an object or system is a measure of its energy content.",
+        "wikipedia": "http://en.wikipedia.org/wiki/Mass_energy",
+        "symbols": ["E","m","c"]
+    }, 
+    {
+        "name": "Newton's law of universal gravitation", 
+        "rep": "F = G{m_1 m_2 \\over r^2}",
+        "details": "Newton's law of universal gravitation states that any two bodies in the universe attract each other with a force that is directly proportional to the product of their masses and inversely proportional to the square of the distance between them. ",
+        "wikipedia": "http://en.wikipedia.org/wiki/Newton's_law_of_universal_gravitation",
+        "symbols": ["F","G","m","r"]
+    }, 
+    {
+        "name": "Centripetal Force", 
+        "rep": "F = {m v^2 \\over r}",
+        "details": "The magnitude of the centripetal force on an object of mass m moving at tangential speed v along a path with radius of curvature r.",
+        "wikipedia": "http://en.wikipedia.org/wiki/Centripetal_force",
+        "symbols": ["F","f","m","M", "R", "r", "v", "V"]
+    }, 
+    {
+        "name": "Angular Acceleration", 
+        "rep": "\\alpha = {\\partial \\omega \\over \\partial t} = {\\partial ^2 \\theta \\over \\partial t^2} = r \\omega ^2 = {v^2 \\over r}",
+        "details": "The acceleration of a particle moving on a curved path as a function of time.",
+        "wikipedia": "http://en.wikipedia.org/wiki/Centripetal_acceleration#Tangential_and_centripetal_acceleration",
+        "symbols": ["&alpha;","v","r","a", "V", "R", "&omega;", "t", "&theta"]
+    }, 
+    {
+        "name": "Velocity in Circular Orbits", 
+        "rep": "v = \\sqrt{G(M+m) \\over r} = \\sqrt{ \\mu \\over r}",
+        "details": "The relative velocity in a circular orbit.",
+        "wikipedia": "http://en.wikipedia.org/wiki/Circular_orbit",
+        "symbols": ["&mu;","G","M","m", "r", "R"]
+    }, 
+    {
+        "name": "Kinetic Energy of Rigid Bodies", 
+        "rep": "KE = {1 \\over 2}m v ^2",
+        "details": "In physics, the kinetic energy of an object is the energy which it possesses due to its motion. It is defined as the work needed to accelerate a body of a given mass from rest to its stated velocity.",
+        "wikipedia": "http://en.wikipedia.org/wiki/Kinetic_energy",
+        "symbols": ["K","E","m","M", "v", "V"]
+    }, 
+    {
+        "name": "Gravitational Potentia Energy", 
+        "rep": "PE = mgh",
+        "details": "Gravitational energy is the potential energy associated with gravitational force, as work is required to elevate objects against Earth's gravity.",
+        "wikipedia": "http://en.wikipedia.org/wiki/Gravitational_potential_energy#Gravitational_potential_energy",
+        "symbols": ["P","E","m","g", "G", "h"]
+    }, 
+    {
+        "name": "Time-dependent Schrödinger equation (general)", 
+        "rep": "i \\hbar {\\partial \\Psi \\over \\partial t} = \\hat H \\Psi",
+        "details": "The most general form is the time-dependent Schrödinger equation, which gives a description of a system evolving with time.",
+        "wikipedia": "http://en.wikipedia.org/wiki/Schr%C3%B6dinger_equation#Time-dependentequation",
+        "wolfram" : "http://mathworld.wolfram.com/SchroedingerEquation.html",
+        "symbols": ["&Psi;","&psi;","i","H", "h"]
+    }, 
+    {
+        "name": "Time-dependent Schrödinger equation (single non-relativistic particle)", 
+        "rep": "i \\hbar {\\partial \\over \\partial t} \\Psi (r,t) = \\big [{- \\hbar \\over 2m} \\nabla ^2 + V(r,t) \\big ] \\Psi (r,t)",
+        "details": "Schrödinger equation for a single particle moving in an electric field.",
+        "wikipedia": "http://en.wikipedia.org/wiki/Schr%C3%B6dinger_equation#Time-dependentequation",
+        "wolfram" : "http://mathworld.wolfram.com/SchroedingerEquation.html",
+        "symbols": ["&Psi;","&psi;","i","H", "V", "r", "t", "h", "m", "M"]
+    }, 
+    {
+        "name": "Time-independent Schrödinger equation (general)", 
+        "rep": "E \\Psi = \\hat H \\Psi",
+        "details": "The time-independent Schrödinger equation predicts that wave functions can form standing waves, called stationary states (also called 'orbitals', as in atomic orbitals or molecular orbitals).",
+        "wikipedia": "http://en.wikipedia.org/wiki/Schr%C3%B6dinger_equation#Time-dependentequation",
+        "wolfram" : "http://mathworld.wolfram.com/SchroedingerEquation.html",
+        "symbols": ["&Psi;","&psi;","E","e"]
+    }, 
+    {
+        "name": "Time-independent Schrödinger equation (single non-relativistic particle)", 
+        "rep": "E \\Psi (r,t) = \\big [{- \\hbar \\over 2m} \\nabla ^2 + V(r,t) \\big ] \\Psi (r,t)",
+        "details": "Time-independent Schrödinger equation for a single particle moving in an electric field.",
+        "wikipedia": "http://en.wikipedia.org/wiki/Schr%C3%B6dinger_equation#Time-dependentequation",
+        "wolfram" : "http://mathworld.wolfram.com/SchroedingerEquation.html",
+        "symbols": ["&Psi;","&psi;","E", "V", "r", "t", "h", "m", "M"]
+    }, 
+    {
+        "name": "Tangential Velocity", 
+        "rep": "v = r \\omega",
+        "details": "Tangential speed (or tangential velocity) is the linear speed of something moving along a circular path.",
+        "wikipedia": "http://en.wikipedia.org/wiki/Tangential_velocity#Tangential_speed",
+        "symbols": ["&omega;","v","V","r", "R"]
+    }, 
+    {
+        "name": "Linear Impulse", 
+        "rep": "J = F \\Delta t = \\Delta (mv)",
+        "details": "In classical mechanics, impulse (symbolized by J or Imp) is the change in linear momentum of a body.",
+        "wikipedia": "http://en.wikipedia.org/wiki/Impulse_(physics)",
+        "symbols": ["&Delta;","t","F","F", "m", "v", "M", "J", "j"]
+    }, 
+    {
+        "name": "Angular Impulse", 
+        "rep": "J = M \\Delta t",
+        "details": "In classical mechanics, impulse (symbolized by J or Imp) is the change in angular momentum of a body.",
+        "wikipedia": "http://en.wikipedia.org/wiki/Impulse_(physics)",
+        "symbols": ["&Delta;","t","F","F", "m", "M", "J", "j"]
+    }, 
+    {
+        "name": "Linear Momentum", 
+        "rep": "p = mv",
+        "details": "In classical mechanics, linear momentum or translational momentum (pl. momenta; SI unit kg m/s, or equivalently, N s) is the product of the mass and velocity of an object.",
+        "wikipedia": "http://en.wikipedia.org/wiki/Momentum",
+        "symbols": ["p","M","v"]
+    }, 
+    {
+        "name": "Angular Momentum", 
+        "rep": "L = I \\omega = R \\times p = R \\times mv",
+        "details": "In physics, angular momentum, moment of momentum, or rotational momentum is a measure of the amount of rotation an object has, taking into account its mass, shape and speed.",
+        "wikipedia": "http://en.wikipedia.org/wiki/Angular_momentum",
+        "symbols": ["&omega;","L","I","m", "M", "v", "p"]
+    }, 
+    {
+        "name": "Force", 
+        "rep": "\\vec F = {d \\vec p \\over d t} = m {d \\vec v \\over dt} = m \\vec a",
+        "details": "In physics, a force is any influence that causes an object to undergo a certain change, either concerning its movement, direction, or geometrical construction.",
+        "wikipedia": "http://en.wikipedia.org/wiki/Force",
+        "symbols": ["F","p","t","m", "M", "a", "v"]
+    }
+
+]

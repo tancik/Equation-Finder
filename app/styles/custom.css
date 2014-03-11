@@ -1,0 +1,64 @@
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Gafata', sans-serif;
+}
+p, div {
+    font-family: 'Gafata', sans-serif;
+}
+
+.symbols {
+
+	min-width: 40px;
+	text-align: center;
+}
+
+.center {
+	text-align: center;
+}
+
+body {
+  padding-top: 20px;
+}
+
+.fixed
+{
+    position: fixed;
+    right: 0%;
+    top: 20px;
+	padding-right: 40px;
+}
+
+.sidebar
+{
+	position: absolute;
+	overflow-y: auto;
+	top: 0px;
+	bottom: 0px;
+	padding-right: 40px;
+}
+
+.equations
+{
+	position: absolute;
+	overflow-y: auto;
+	top: 0px;
+	bottom: 0px;
+	right: 25%;
+	padding-right: 40px;
+}
+
+.sidebarSpacing
+{
+	padding-top: 10px;
+}
+
+.showMore
+{
+	padding-bottom: 20px;
+}
+
+.details
+{
+	text-align: left;
+	line-height: 30px;
+	padding-top: 20px;
+}

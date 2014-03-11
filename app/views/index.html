@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en" ng-app="equationFinder">
+<head>
+  <meta charset="utf-8">
+  <title>Equation Finder</title>
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+  <link rel="stylesheet" href="styles/custom.css">
+  <script src="bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-sanitize/angular-sanitize.min.js"></script>
+  <script src="scripts/controllers.js"></script>
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+  </script>
+  <script type="text/javascript"
+    src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  </script>
+  <link href='http://fonts.googleapis.com/css?family=Gafata&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-46779055-2', 'equationfinder.com');
+    ga('send', 'pageview');
+  </script>
+</head>
+<body ng-controller="equationFinderCtrl">
+
+  <div class="container-fluid">
+    <div class="row-fluid">
+      <div class="span3 sidebar">
+        <!--Sidebar content-->
+          <h1> Equation Finder</h1>
+          <p>&nbsp</p>
+        <!-- $$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$ -->
+          <p><input type="text" class="span12" placeholder="Search" ng-model="query"></p>
+
+
+        <ul >
+          <span ng-repeat="symboltype in symbols">
+             <!--  <input type="checkbox" id="inlineCheckbox2" value="option2"> <div ng-bind-html="to_trusted(symbol.symbol)"></div> -->
+            <div class="panel panel-default">
+              <div class="panel-heading"><h5 class="panel-title">{{symboltype.name}}</h5></div>
+              <div class="panel-body">
+                <span ng-repeat="symbol in symboltype.letter">
+                <button type="button"  ng-click="updateLetters(symbol.symbol)" ng-class="{'btn btn-success': isSelected(symbol.symbol), 'btn btn-default': !isSelected(symbol.symbol)}" class=" symbols"><div ng-bind-html="to_trusted(symbol.symbol)"></div></button>
+                </span>
+              </div>
+            </div>
+          </span>
+        </ul>
+
+      </div>
+
+      <div class="span6 equations">
+        <!--Body content-->
+        <h5>Filtered to {{filteredItems.length}} equation{{plural}}</h5>
+        <table class="table table-hover">
+          <tr ng-click="selectEquation(equation)" ng-repeat="equation in filteredItems = (equations | filter:equationFilter | filter:query)  | limitTo:limit">
+            <td>
+              <h3>{{equation.name}}</h3>
+              <h1 mathjax-bind="equation.rep"></h1>
+            </td>
+            <!-- <p>{{equation.rep}}</p> -->
+          </tr>
+        </table>
+        <p class="showMore center"><button ng-show="showMore" ng-click="increaseLimit()" type="button" class="btn btn-default">Show More</button><p>
+      </div>
+
+      <div class="span3 center fixed">
+        <!--Details content-->
+        <p><h2 ng-show="active.name == null">Welcome.</h2><p>
+        <p><h4 ng-show="active.name == null">Select symbols or enter a query to filter the equations.</h4><p>
+        <p><h4 ng-show="active.name == null">Click the equations for details.</h4><p>
+        <h2>{{active.name}}</h2>
+        <h4 class="details" ng-bind-html="to_trusted(active.details)"></h4>
+        <a href="{{active.wikipedia}}" ng-show="active.wikipedia" target="_blank"><img src="/images/wikipedia.png" border="0" style="border:none;max-width:50%;"/></a>
+        <a href="{{active.wolfram}}" ng-show="active.wolfram" target="_blank"><img src="/images/wolfram.png" border="0" style="border:none;max-width:40%;"/></a>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
