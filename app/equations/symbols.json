@@ -274,6 +274,15 @@
         ]
     },
     {   
+        "name": "Other Characters",
+        "letter": [
+            {
+                "symbol": "&#295;",
+                "disc": "Greek small letter alpha"
+            }
+        ]
+    },
+    {   
         "name": "Relation symbols",
         "letter": [
             {

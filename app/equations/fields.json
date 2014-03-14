@@ -1,0 +1,37 @@
+[
+    {   
+        "name": "All",
+        "subType": []
+    },
+    {   
+        "name": "Physics",
+        "subType": [
+            {
+                "type": "Classical Mechanics"
+            },
+            {
+                "type": "Quantum Mechanics"
+            },
+            {
+                "type": "Statistical Mechanics"
+            },
+            {
+                "type": "Relativity"
+            },
+            {
+                "type": "Electromagnetism"
+            }
+        ]
+    },
+    {   
+        "name": "Math",
+        "subType": [
+            {
+                "type": "Geometry"
+            },
+            {
+                "type": "Calculus"
+            }
+        ]
+    }
+]

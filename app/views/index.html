@@ -56,7 +56,19 @@
 
       <div class="span6 equations">
         <!--Body content-->
-        <h5>Filtered to {{filteredItems.length}} equation{{plural}}</h5>
+        <ul class="nav nav-tabs">
+          <li ng-repeat="field in fields" ng-class="{'active': isActiveField(field)}" ng-click="selectField(field)">
+            <a href="#" style="font-size:large;">{{field.name}}</a>
+          </li>
+          <h4 style="text-align: right;">Filtered to {{filteredItems.length}} equation{{plural}}</h4>
+        </ul>
+        <ul class="nav nav-pills">
+          <li ng-repeat="type in currentField.subType" ng-click="updateFieldTypes(type.type)" ng-class="{'active': isTypeSelected(type.type)}">
+            <a href="#" style="font-size:medium;">{{type.type}}</a>
+          </li>
+        </ul>
+
+        
         <table class="table table-hover">
           <tr ng-click="selectEquation(equation)" ng-repeat="equation in filteredItems = (equations | filter:equationFilter | filter:query)  | limitTo:limit">
             <td>
@@ -74,6 +86,7 @@
         <p><h2 ng-show="active.name == null">Welcome.</h2><p>
         <p><h4 ng-show="active.name == null">Select symbols or enter a query to filter the equations.</h4><p>
         <p><h4 ng-show="active.name == null">Click the equations for details.</h4><p>
+        <p><h4 ng-show="active.name == null">This site is currently under construction. Please escuse the lack of equations and any bugs you may run into.</h4><p>
         <h2>{{active.name}}</h2>
         <h4 class="details" ng-bind-html="to_trusted(active.details)"></h4>
         <a href="{{active.wikipedia}}" ng-show="active.wikipedia" target="_blank"><img src="/images/wikipedia.png" border="0" style="border:none;max-width:50%;"/></a>

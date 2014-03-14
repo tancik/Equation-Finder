@@ -10,11 +10,46 @@ equationFinder.controller('equationFinderCtrl', function($scope, $sce, $http) {
     $scope.symbols = data;
     console.log("Whats up!");
   });
-
-    $http.get('equations/equations.json').success(function(data) {
+  $http.get('equations/fields.json').success(function(data) {
+    $scope.fields = data;
+  });
+  $http.get('equations/equations.json').success(function(data) {
     $scope.equations = data;
     $scope.filteredItems = data;
   });
+
+  $scope.activeField = 'All';
+  $scope.currentField = null;
+  $scope.isActiveField = function(field) {
+    return $scope.activeField == field.name;
+  }
+
+  $scope.selectField = function(field) {
+    $scope.activeField = field.name;
+    $scope.currentField = field;
+  }
+
+  $scope.selectedFieldTypes = [];
+  $scope.updateFieldTypes = function(type) {
+      $scope.resetLimit();
+      var index = $scope.selectedFieldTypes.indexOf(type);
+      if (index > -1){
+        $scope.selectedFieldTypes.splice(index, 1);
+      }
+      else {
+        $scope.selectedFieldTypes.push(type);
+      }
+  };
+  $scope.isTypeSelected = function(type) {
+      var index = $scope.selectedFieldTypes.indexOf(type);
+      if (index > -1){
+        return true;
+      }
+      else {
+        return false;
+      }
+  };
+
 
   $scope.orderProp = 'age';
 

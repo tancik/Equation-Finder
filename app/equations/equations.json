@@ -11,6 +11,7 @@
         "rep": "F = G{m_1 m_2 \\over r^2}",
         "details": "Newton's law of universal gravitation states that any two bodies in the universe attract each other with a force that is directly proportional to the product of their masses and inversely proportional to the square of the distance between them. ",
         "wikipedia": "http://en.wikipedia.org/wiki/Newton's_law_of_universal_gravitation",
+        "wolfram": "http://scienceworld.wolfram.com/physics/Gravity.html",
         "symbols": ["F","G","m","r"]
     }, 
     {
@@ -18,6 +19,7 @@
         "rep": "F = {m v^2 \\over r}",
         "details": "The magnitude of the centripetal force on an object of mass m moving at tangential speed v along a path with radius of curvature r.",
         "wikipedia": "http://en.wikipedia.org/wiki/Centripetal_force",
+        "wolfram": "http://scienceworld.wolfram.com/physics/CentripetalForce.html",
         "symbols": ["F","f","m","M", "R", "r", "v", "V"]
     }, 
     {
@@ -25,6 +27,7 @@
         "rep": "\\alpha = {\\partial \\omega \\over \\partial t} = {\\partial ^2 \\theta \\over \\partial t^2} = r \\omega ^2 = {v^2 \\over r}",
         "details": "The acceleration of a particle moving on a curved path as a function of time.",
         "wikipedia": "http://en.wikipedia.org/wiki/Centripetal_acceleration#Tangential_and_centripetal_acceleration",
+        "wolfram": "http://mathworld.wolfram.com/AngularAcceleration.html",
         "symbols": ["&alpha;","v","r","a", "V", "R", "&omega;", "t", "&theta"]
     }, 
     {
@@ -39,14 +42,15 @@
         "rep": "KE = {1 \\over 2}m v ^2",
         "details": "In physics, the kinetic energy of an object is the energy which it possesses due to its motion. It is defined as the work needed to accelerate a body of a given mass from rest to its stated velocity.",
         "wikipedia": "http://en.wikipedia.org/wiki/Kinetic_energy",
+        "wolfram": "http://scienceworld.wolfram.com/physics/KineticEnergy.html",
         "symbols": ["K","E","m","M", "v", "V"]
     }, 
     {
         "name": "Gravitational Potentia Energy", 
-        "rep": "PE = mgh",
+        "rep": "U = PE = mgh = -{G M m \\over r}",
         "details": "Gravitational energy is the potential energy associated with gravitational force, as work is required to elevate objects against Earth's gravity.",
         "wikipedia": "http://en.wikipedia.org/wiki/Gravitational_potential_energy#Gravitational_potential_energy",
-        "symbols": ["P","E","m","g", "G", "h"]
+        "symbols": ["P","E","m","g", "G","r","U", "h"]
     }, 
     {
         "name": "Time-dependent Schrödinger equation (general)", 
@@ -54,7 +58,7 @@
         "details": "The most general form is the time-dependent Schrödinger equation, which gives a description of a system evolving with time.",
         "wikipedia": "http://en.wikipedia.org/wiki/Schr%C3%B6dinger_equation#Time-dependentequation",
         "wolfram" : "http://mathworld.wolfram.com/SchroedingerEquation.html",
-        "symbols": ["&Psi;","&psi;","i","H", "h"]
+        "symbols": ["&Psi;","&psi;","&#295;","i","H", "h"]
     }, 
     {
         "name": "Time-dependent Schrödinger equation (single non-relativistic particle)", 
@@ -62,7 +66,7 @@
         "details": "Schrödinger equation for a single particle moving in an electric field.",
         "wikipedia": "http://en.wikipedia.org/wiki/Schr%C3%B6dinger_equation#Time-dependentequation",
         "wolfram" : "http://mathworld.wolfram.com/SchroedingerEquation.html",
-        "symbols": ["&Psi;","&psi;","i","H", "V", "r", "t", "h", "m", "M"]
+        "symbols": ["&Psi;","&psi;","&#295;","i","H", "V", "r", "t", "h", "m", "M"]
     }, 
     {
         "name": "Time-independent Schrödinger equation (general)", 
@@ -70,7 +74,7 @@
         "details": "The time-independent Schrödinger equation predicts that wave functions can form standing waves, called stationary states (also called 'orbitals', as in atomic orbitals or molecular orbitals).",
         "wikipedia": "http://en.wikipedia.org/wiki/Schr%C3%B6dinger_equation#Time-dependentequation",
         "wolfram" : "http://mathworld.wolfram.com/SchroedingerEquation.html",
-        "symbols": ["&Psi;","&psi;","E","e"]
+        "symbols": ["&Psi;","&psi;","&#295;","E","e"]
     }, 
     {
         "name": "Time-independent Schrödinger equation (single non-relativistic particle)", 
@@ -78,7 +82,7 @@
         "details": "Time-independent Schrödinger equation for a single particle moving in an electric field.",
         "wikipedia": "http://en.wikipedia.org/wiki/Schr%C3%B6dinger_equation#Time-dependentequation",
         "wolfram" : "http://mathworld.wolfram.com/SchroedingerEquation.html",
-        "symbols": ["&Psi;","&psi;","E", "V", "r", "t", "h", "m", "M"]
+        "symbols": ["&Psi;","&psi;","&#295;","E", "V", "r", "t", "h", "m", "M"]
     }, 
     {
         "name": "Tangential Velocity", 
@@ -106,6 +110,7 @@
         "rep": "p = mv",
         "details": "In classical mechanics, linear momentum or translational momentum (pl. momenta; SI unit kg m/s, or equivalently, N s) is the product of the mass and velocity of an object.",
         "wikipedia": "http://en.wikipedia.org/wiki/Momentum",
+        "wolfram" : "http://scienceworld.wolfram.com/physics/Momentum.html",
         "symbols": ["p","M","v"]
     }, 
     {
@@ -113,6 +118,7 @@
         "rep": "L = I \\omega = R \\times p = R \\times mv",
         "details": "In physics, angular momentum, moment of momentum, or rotational momentum is a measure of the amount of rotation an object has, taking into account its mass, shape and speed.",
         "wikipedia": "http://en.wikipedia.org/wiki/Angular_momentum",
+        "wolfram" : "http://scienceworld.wolfram.com/physics/AngularMomentum.html",
         "symbols": ["&omega;","L","I","m", "M", "v", "p"]
     }, 
     {
@@ -120,6 +126,7 @@
         "rep": "\\vec F = {d \\vec p \\over d t} = m {d \\vec v \\over dt} = m \\vec a",
         "details": "In physics, a force is any influence that causes an object to undergo a certain change, either concerning its movement, direction, or geometrical construction.",
         "wikipedia": "http://en.wikipedia.org/wiki/Force",
+        "wolfram" : "http://scienceworld.wolfram.com/physics/Force.html",
         "symbols": ["F","p","t","m", "M", "a", "v"]
     }
 
