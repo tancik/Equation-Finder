@@ -27,6 +27,7 @@ equationFinder.controller('equationFinderCtrl', function($scope, $sce, $http) {
   $scope.selectField = function(field) {
     $scope.activeField = field.name;
     $scope.currentField = field;
+    $scope.selectedFieldTypes = [field.name];
   }
 
   $scope.selectedFieldTypes = [];
@@ -124,6 +125,12 @@ equationFinder.controller('equationFinderCtrl', function($scope, $sce, $http) {
       for (var i = 0; i<$scope.selectedLetters.length; i++) {
         var letter = $scope.selectedLetters[i];
         if (equation.symbols.indexOf(letter) == -1) {
+          return false;
+        }
+      }
+      for (var i = 0; i<$scope.selectedFieldTypes.length; i++) {
+        var type = $scope.selectedFieldTypes[i];
+        if (equation.types.indexOf(type) == -1) {
           return false;
         }
       }

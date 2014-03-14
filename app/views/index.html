@@ -5,6 +5,7 @@
   <title>Equation Finder</title>
   <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
   <link rel="stylesheet" href="styles/custom.css">
+  <link rel="stylesheet" href="styles/flat-ui.css">
   <script src="bower_components/jquery/dist/jquery.min.js"></script>
   <script src="bower_components/angular/angular.js"></script>
   <script src="bower_components/angular-sanitize/angular-sanitize.min.js"></script>
@@ -45,7 +46,7 @@
               <div class="panel-heading"><h5 class="panel-title">{{symboltype.name}}</h5></div>
               <div class="panel-body">
                 <span ng-repeat="symbol in symboltype.letter">
-                <button type="button"  ng-click="updateLetters(symbol.symbol)" ng-class="{'btn btn-success': isSelected(symbol.symbol), 'btn btn-default': !isSelected(symbol.symbol)}" class=" symbols"><div ng-bind-html="to_trusted(symbol.symbol)"></div></button>
+                <button type="button"  ng-click="updateLetters(symbol.symbol)" ng-class="{'btn btn-success': isSelected(symbol.symbol), 'btn btn-info': !isSelected(symbol.symbol)}" class=" symbols"><div ng-bind-html="to_trusted(symbol.symbol)"></div></button>
                 </span>
               </div>
             </div>
@@ -60,7 +61,7 @@
           <li ng-repeat="field in fields" ng-class="{'active': isActiveField(field)}" ng-click="selectField(field)">
             <a href="#" style="font-size:large;">{{field.name}}</a>
           </li>
-          <h4 style="text-align: right;">Filtered to {{filteredItems.length}} equation{{plural}}</h4>
+          <p style="text-align: right;">Filtered to {{filteredItems.length}} equation{{plural}}</p>
         </ul>
         <ul class="nav nav-pills">
           <li ng-repeat="type in currentField.subType" ng-click="updateFieldTypes(type.type)" ng-class="{'active': isTypeSelected(type.type)}">
