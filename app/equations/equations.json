@@ -4,7 +4,7 @@
         "rep": "E = mc^2",
         "details": "In physics, mass–energy equivalence is the concept that the mass of an object or system is a measure of its energy content.",
         "wikipedia": "http://en.wikipedia.org/wiki/Mass_energy",
-        "symbols": ["E","m","c"],
+        "symbols": ["e","m","c"],
         "types": ["All", "Physics", "Relativity"]
     }, 
     {
@@ -13,7 +13,7 @@
         "details": "Newton's law of universal gravitation states that any two bodies in the universe attract each other with a force that is directly proportional to the product of their masses and inversely proportional to the square of the distance between them. ",
         "wikipedia": "http://en.wikipedia.org/wiki/Newton's_law_of_universal_gravitation",
         "wolfram": "http://scienceworld.wolfram.com/physics/Gravity.html",
-        "symbols": ["F","G","m","r"],
+        "symbols": ["f","g","m","r"],
         "types": ["All", "Physics", "Classical Mechanics"]
     }, 
     {
@@ -22,7 +22,7 @@
         "details": "The magnitude of the centripetal force on an object of mass m moving at tangential speed v along a path with radius of curvature r.",
         "wikipedia": "http://en.wikipedia.org/wiki/Centripetal_force",
         "wolfram": "http://scienceworld.wolfram.com/physics/CentripetalForce.html",
-        "symbols": ["F","f","m","M", "R", "r", "v", "V"],
+        "symbols": ["f","m", "r", "v"],
         "types": ["All", "Physics", "Classical Mechanics"]
     }, 
     {
@@ -31,7 +31,7 @@
         "details": "The acceleration of a particle moving on a curved path as a function of time.",
         "wikipedia": "http://en.wikipedia.org/wiki/Centripetal_acceleration#Tangential_and_centripetal_acceleration",
         "wolfram": "http://mathworld.wolfram.com/AngularAcceleration.html",
-        "symbols": ["&alpha;","v","r","a", "V", "R", "&omega;", "t", "&theta"],
+        "symbols": ["&alpha;","v","r","a", "&omega;", "t", "&theta"],
         "types": ["All", "Physics", "Classical Mechanics"]
     }, 
     {
@@ -39,7 +39,7 @@
         "rep": "v = \\sqrt{G(M+m) \\over r} = \\sqrt{ \\mu \\over r}",
         "details": "The relative velocity in a circular orbit.",
         "wikipedia": "http://en.wikipedia.org/wiki/Circular_orbit",
-        "symbols": ["&mu;","G","M","m", "r", "R"],
+        "symbols": ["&mu;","g","m", "r"],
         "types": ["All", "Physics", "Classical Mechanics"]
     }, 
     {
@@ -48,7 +48,7 @@
         "details": "In physics, the kinetic energy of an object is the energy which it possesses due to its motion. It is defined as the work needed to accelerate a body of a given mass from rest to its stated velocity.",
         "wikipedia": "http://en.wikipedia.org/wiki/Kinetic_energy",
         "wolfram": "http://scienceworld.wolfram.com/physics/KineticEnergy.html",
-        "symbols": ["K","E","m","M", "v", "V"],
+        "symbols": ["k","e","m", "v"],
         "types": ["All", "Physics", "Classical Mechanics"]
     }, 
     {
@@ -56,7 +56,7 @@
         "rep": "U = PE = mgh = -{G M m \\over r}",
         "details": "Gravitational energy is the potential energy associated with gravitational force, as work is required to elevate objects against Earth's gravity.",
         "wikipedia": "http://en.wikipedia.org/wiki/Gravitational_potential_energy#Gravitational_potential_energy",
-        "symbols": ["P","E","m","g", "G","r","U", "h"],
+        "symbols": ["p","e","m","g","r","u", "h"],
         "types": ["All", "Physics", "Classical Mechanics"]
     }, 
     {
@@ -65,7 +65,7 @@
         "details": "The most general form is the time-dependent Schrödinger equation, which gives a description of a system evolving with time.",
         "wikipedia": "http://en.wikipedia.org/wiki/Schr%C3%B6dinger_equation#Time-dependentequation",
         "wolfram" : "http://mathworld.wolfram.com/SchroedingerEquation.html",
-        "symbols": ["&Psi;","&psi;","&#295;","i","H", "h"],
+        "symbols": ["&Psi;","&psi;","&#295;","i", "h"],
         "types": ["All", "Physics", "Quantum Mechanics"]
     }, 
     {
@@ -74,7 +74,7 @@
         "details": "Schrödinger equation for a single particle moving in an electric field.",
         "wikipedia": "http://en.wikipedia.org/wiki/Schr%C3%B6dinger_equation#Time-dependentequation",
         "wolfram" : "http://mathworld.wolfram.com/SchroedingerEquation.html",
-        "symbols": ["&Psi;","&psi;","&#295;","i","H", "V", "r", "t", "h", "m", "M"],
+        "symbols": ["&Psi;","&psi;","&#295;","i","h", "v", "r", "t", "m"],
         "types": ["All", "Physics", "Quantum Mechanics"]
     }, 
     {
@@ -83,7 +83,7 @@
         "details": "The time-independent Schrödinger equation predicts that wave functions can form standing waves, called stationary states (also called 'orbitals', as in atomic orbitals or molecular orbitals).",
         "wikipedia": "http://en.wikipedia.org/wiki/Schr%C3%B6dinger_equation#Time-dependentequation",
         "wolfram" : "http://mathworld.wolfram.com/SchroedingerEquation.html",
-        "symbols": ["&Psi;","&psi;","&#295;","E","e"],
+        "symbols": ["&Psi;","&psi;","&#295;","e"],
         "types": ["All", "Physics", "Quantum Mechanics"]
     }, 
     {
@@ -92,7 +92,7 @@
         "details": "Time-independent Schrödinger equation for a single particle moving in an electric field.",
         "wikipedia": "http://en.wikipedia.org/wiki/Schr%C3%B6dinger_equation#Time-dependentequation",
         "wolfram" : "http://mathworld.wolfram.com/SchroedingerEquation.html",
-        "symbols": ["&Psi;","&psi;","&#295;","E", "V", "r", "t", "h", "m", "M"],
+        "symbols": ["&Psi;","&psi;","&#295;","e", "v", "r", "t", "h", "m"],
         "types": ["All", "Physics", "Quantum Mechanics"]
     }, 
     {
@@ -100,7 +100,7 @@
         "rep": "v = r \\omega",
         "details": "Tangential speed (or tangential velocity) is the linear speed of something moving along a circular path.",
         "wikipedia": "http://en.wikipedia.org/wiki/Tangential_velocity#Tangential_speed",
-        "symbols": ["&omega;","v","V","r", "R"],
+        "symbols": ["&omega;","v","r"],
         "types": ["All", "Physics", "Classical Mechanics"]
     }, 
     {
@@ -108,7 +108,7 @@
         "rep": "J = F \\Delta t = \\Delta (mv)",
         "details": "In classical mechanics, impulse (symbolized by J or Imp) is the change in linear momentum of a body.",
         "wikipedia": "http://en.wikipedia.org/wiki/Impulse_(physics)",
-        "symbols": ["&Delta;","t","F","F", "m", "v", "M", "J", "j"],
+        "symbols": ["&Delta;","t","f", "m", "v", "j"],
         "types": ["All", "Physics", "Classical Mechanics"]
     }, 
     {
@@ -116,7 +116,7 @@
         "rep": "J = M \\Delta t",
         "details": "In classical mechanics, impulse (symbolized by J or Imp) is the change in angular momentum of a body.",
         "wikipedia": "http://en.wikipedia.org/wiki/Impulse_(physics)",
-        "symbols": ["&Delta;","t","F","F", "m", "M", "J", "j"],
+        "symbols": ["&Delta;","t","f", "m", "j"],
         "types": ["All", "Physics", "Classical Mechanics"]
     }, 
     {
@@ -125,7 +125,7 @@
         "details": "In classical mechanics, linear momentum or translational momentum (pl. momenta; SI unit kg m/s, or equivalently, N s) is the product of the mass and velocity of an object.",
         "wikipedia": "http://en.wikipedia.org/wiki/Momentum",
         "wolfram" : "http://scienceworld.wolfram.com/physics/Momentum.html",
-        "symbols": ["p","M","v"],
+        "symbols": ["p","m","v"],
         "types": ["All", "Physics", "Classical Mechanics"]
     }, 
     {
@@ -134,7 +134,7 @@
         "details": "In physics, angular momentum, moment of momentum, or rotational momentum is a measure of the amount of rotation an object has, taking into account its mass, shape and speed.",
         "wikipedia": "http://en.wikipedia.org/wiki/Angular_momentum",
         "wolfram" : "http://scienceworld.wolfram.com/physics/AngularMomentum.html",
-        "symbols": ["&omega;","L","I","m", "M", "v", "p"],
+        "symbols": ["&omega;","l","i","m", "v", "p"],
         "types": ["All", "Physics", "Classical Mechanics"]
     }, 
     {
@@ -143,8 +143,26 @@
         "details": "In physics, a force is any influence that causes an object to undergo a certain change, either concerning its movement, direction, or geometrical construction.",
         "wikipedia": "http://en.wikipedia.org/wiki/Force",
         "wolfram" : "http://scienceworld.wolfram.com/physics/Force.html",
-        "symbols": ["F","p","t","m", "M", "a", "v"],
+        "symbols": ["f","p","t","m", "a", "v"],
         "types": ["All", "Physics", "Classical Mechanics"]
+    }, 
+    {
+        "name": "Pythagorean theorem", 
+        "rep": "a^2 + b^2 = c^2",
+        "details": "In mathematics, the Pythagorean theorem—or Pythagoras' theorem—is a relation in Euclidean geometry among the three sides of a right triangle. It states that the square of the hypotenuse (the side opposite the right angle) is equal to the sum of the squares of the other two sides.",
+        "wikipedia": "http://en.wikipedia.org/wiki/Pythagorean_theorem",
+        "wolfram" : "http://mathworld.wolfram.com/PythagoreanTheorem.html",
+        "symbols": ["a","b","c"],
+        "types": ["All", "Math", "Geometry"]
+    }, 
+    {
+        "name": "Area of Circle (Disk)", 
+        "rep": "A = \\pi r^2",
+        "details": "The area of a disk, more commonly called the area of a circle, of radius r is equal to πr2. Here the symbol π (Greek letter pi) denotes the constant ratio of the circumference of a circle to its diameter or of the area of a circle to the square of its radius.",
+        "wikipedia": "http://en.wikipedia.org/wiki/Area_of_a_disk",
+        "wolfram" : "http://mathworld.wolfram.com/Circle.html",
+        "symbols": ["&pi;","r","a"],
+        "types": ["All", "Math", "Geometry"]
     }
 
 ]

@@ -7,6 +7,9 @@
         "name": "Physics",
         "subType": [
             {
+                "type": "All"
+            },
+            {
                 "type": "Classical Mechanics"
             },
             {
@@ -27,11 +30,51 @@
         "name": "Math",
         "subType": [
             {
+                "type": "All"
+            },
+            {
+                "type": "Algebra"
+            },
+            {
                 "type": "Geometry"
             },
             {
                 "type": "Calculus"
+            },
+            {
+                "type": "Combinatorics"
+            },
+            {
+                "type": "Discrete Math"
+            },
+            {
+                "type": "Graph Theory"
+            },
+            {
+                "type": "Number Theory"
+            },
+            {
+                "type": "Probability"
+            },
+            {
+                "type": "Topology"
             }
         ]
+    },
+    {   
+        "name": "Electrical Engineering",
+        "subType": []
+    },
+    {   
+        "name": "Computer Science",
+        "subType": []
+    },
+    {   
+        "name": "Chemistry",
+        "subType": []
+    },
+    {   
+        "name": "Material Science",
+        "subType": []
     }
 ]

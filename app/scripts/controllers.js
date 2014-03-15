@@ -31,26 +31,12 @@ equationFinder.controller('equationFinderCtrl', function($scope, $sce, $http) {
   }
 
   $scope.selectedFieldTypes = [];
+  $scope.activeSubfield = "Select Subfield"
+  $scope.currentSubfield = null;
   $scope.updateFieldTypes = function(type) {
-      $scope.resetLimit();
-      var index = $scope.selectedFieldTypes.indexOf(type);
-      if (index > -1){
-        $scope.selectedFieldTypes.splice(index, 1);
-      }
-      else {
-        $scope.selectedFieldTypes.push(type);
-      }
+    $scope.selectedFieldTypes.push(type);
+    $scope.activeSubfield = type;
   };
-  $scope.isTypeSelected = function(type) {
-      var index = $scope.selectedFieldTypes.indexOf(type);
-      if (index > -1){
-        return true;
-      }
-      else {
-        return false;
-      }
-  };
-
 
   $scope.orderProp = 'age';
 
@@ -136,7 +122,6 @@ equationFinder.controller('equationFinderCtrl', function($scope, $sce, $http) {
       }
       return true;
   }
-
 });
 
 equationFinder.directive("mathjaxBind", function() {
@@ -144,14 +129,33 @@ equationFinder.directive("mathjaxBind", function() {
         restrict: "A",
         controller: ["$scope", "$element", "$attrs",
                 function($scope, $element, $attrs) {
+            $scope.cachedEquations = {};
             $scope.$watch($attrs.mathjaxBind, function(value) {
+              console.log($scope.cachedEquations);
+                if (value in $scope.cachedEquations)
+                {
+                  $element.html("");
+                  $element.append($scope.cachedEquations[value]);
+                  return;
+                }
                 var $script = angular.element("<script type='math/tex'>")
                     .html(value == undefined ? "" : value);
                 $element.html("");
                 $element.append($script);
-                MathJax.Hub.Queue(["Reprocess", MathJax.Hub, $element[0]]);
+                MathJax.Hub.Queue(["Rerender", MathJax.Hub, $element[0]], [cache,$element, $scope.cachedEquations]);
+
+
             });
         }]
     };
 });
+
+var cache = function(element, cachedEquations) {
+  console.log(element);
+  var equation = element.children().first();
+  cachedEquations[equation.text()] = equation;
+  element.attr("id",equation.text());
+  //console.log(element);
+  //console.log(equation.text());
+}
 

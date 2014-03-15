@@ -9,6 +9,7 @@ p, div {
 
 	min-width: 40px;
 	text-align: center;
+	margin: 4px;
 }
 
 .center {
@@ -26,6 +27,7 @@ body {
     top: 20px;
 	padding-right: 40px;
 }
+
 
 .sidebar
 {
