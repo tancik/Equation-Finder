@@ -46,7 +46,7 @@
   </nav>
   <div class="container-fluid">
     <div class="row-fluid">
-      <div class="col-md-3">
+      <div class="col-md-3 sidebar">
         <!--Sidebar content-->
         <p><input type="text" class="col-md-12" placeholder="Search" ng-model="query" style="margin-top:5px;"></p>
 
@@ -63,7 +63,7 @@
 
       </div>
 
-      <div class="col-md-6">
+      <div class="col-md-6 equations">
         <!--Body content-->
         
         <table class="table table-hover">
@@ -78,7 +78,7 @@
         <p class="showMore center"><button ng-show="showMore" ng-click="increaseLimit()" type="button" class="btn btn-default">Show More</button><p>
       </div>
 
-      <div class="col-md-3 center">
+      <div class="col-md-3 center fixed">
         <!--Details content-->
         <p><h3 ng-show="active.name == null">Welcome.</h3><p>
         <p><h6 ng-show="active.name == null">Select symbols or enter a query to filter the equations.</h6><p>

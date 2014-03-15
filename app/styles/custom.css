@@ -24,7 +24,7 @@ body {
 {
     position: fixed;
     right: 0%;
-    top: 20px;
+    top: 80px;
 	padding-right: 40px;
 }
 
@@ -33,7 +33,7 @@ body {
 {
 	position: absolute;
 	overflow-y: auto;
-	top: 0px;
+	top: 60px;
 	bottom: 0px;
 	padding-right: 40px;
 }
@@ -42,7 +42,7 @@ body {
 {
 	position: absolute;
 	overflow-y: auto;
-	top: 0px;
+	top: 60px;
 	bottom: 0px;
 	right: 25%;
 	padding-right: 40px;
