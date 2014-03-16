@@ -18,7 +18,7 @@ equationFinder.controller('equationFinderCtrl', function($scope, $sce, $http) {
     $scope.filteredItems = data;
   });
 
-  $scope.activeField = 'All';
+  $scope.activeField = 'Select Field';
   $scope.currentField = null;
   $scope.isActiveField = function(field) {
     return $scope.activeField == field.name;
@@ -47,6 +47,7 @@ equationFinder.controller('equationFinderCtrl', function($scope, $sce, $http) {
   $scope.active = null;
   $scope.selectEquation = function(equation) {
         $scope.active = equation;
+        $scope.detailsState = 'equation';
       };
 
   $scope.isSelected = function(letter) {
@@ -58,6 +59,11 @@ equationFinder.controller('equationFinderCtrl', function($scope, $sce, $http) {
         return false;
       }
   };
+
+  $scope.detailsState = 'welcome';
+  $scope.setDetailsState = function(state) {
+    $scope.detailsState = state;
+  }
 
   $scope.selectedLetters = [];
   $scope.updateLetters = function(letter) {
@@ -131,7 +137,7 @@ equationFinder.directive("mathjaxBind", function() {
                 function($scope, $element, $attrs) {
             $scope.cachedEquations = {};
             $scope.$watch($attrs.mathjaxBind, function(value) {
-              console.log($scope.cachedEquations);
+              //console.log($scope.cachedEquations);
                 if (value in $scope.cachedEquations)
                 {
                   $element.html("");
@@ -151,11 +157,31 @@ equationFinder.directive("mathjaxBind", function() {
 });
 
 var cache = function(element, cachedEquations) {
-  console.log(element);
+  //console.log(element);
   var equation = element.children().first();
   cachedEquations[equation.text()] = equation;
   element.attr("id",equation.text());
   //console.log(element);
   //console.log(equation.text());
+}
+
+  function postContactToGoogle() {
+    var email = $('#inputEmail3').val();
+    var equation = $('#equationInput').val();
+    var wikipedia = $('#wikipediaLink').val();
+        $.ajax({
+            url: "https://docs.google.com/forms/d/1Wi-EDkvUz8qE1hl9Hy3_DWm5FsJ5lpnhcGfx_K1V1bw/formResponse",
+            data: { "entry_451789130": email, "entry_1056986095": equation, "entry_550768504": wikipedia},
+            type: "POST",
+            dataType: "xml",
+            statusCode: {
+                0: function () {
+                    window.location.replace("ThankYou.html");
+                },
+                200: function () {
+                    window.location.replace("ThankYou.html");
+                }
+            }
+        });
 }
 

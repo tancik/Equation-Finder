@@ -2,7 +2,7 @@
     {
         "name": "Mass-energy equivalence", 
         "rep": "E = mc^2",
-        "details": "In physics, mass–energy equivalence is the concept that the mass of an object or system is a measure of its energy content.",
+        "details": "In physics, mass energy equivalence is the concept that the mass of an object or system is a measure of its energy content.",
         "wikipedia": "http://en.wikipedia.org/wiki/Mass_energy",
         "symbols": ["e","m","c"],
         "types": ["All", "Physics", "Relativity"]

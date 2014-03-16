@@ -42,6 +42,10 @@
           </ul>
         </li>
        </ul>
+       <ul class="nav navbar-nav navbar-right" style="padding-right:40px">
+            <li><a href="#" ng-click="setDetailsState('submit')">Submit Equation</a></li>
+            <li><a href="#" ng-click="setDetailsState('about')">About</a></li>
+          </ul>
     </div><!-- /.navbar-collapse -->
   </nav>
   <div class="container-fluid">
@@ -80,10 +84,40 @@
 
       <div class="col-md-3 center fixed">
         <!--Details content-->
-        <p><h3 ng-show="active.name == null">Welcome.</h3><p>
-        <p><h6 ng-show="active.name == null">Select symbols or enter a query to filter the equations.</h6><p>
-        <p><h6 ng-show="active.name == null">Click the equations for details.</h6><p>
-        <p><h6 ng-show="active.name == null">This site is currently under construction. Please excuse the lack of equations and any bugs you may run into.</h6><p>
+        <span ng-show="detailsState == 'welcome'">
+          <p><h3>Welcome.</h3></p>
+          <p>Select symbols or enter a query to filter the equations.</p>
+          <p>Click the equations for details.</p>
+          <p>This site is currently under construction. Please excuse the lack of equations and any bugs you may run into.</p>
+        </span>
+
+        <span ng-show="detailsState == 'about'">
+          <p><h3>About.</h3></p>
+          <p>This site was designed to make finding equations easier.</p>
+          <p>View the source code <a href='https://github.com/tancik/Equation-Finder' target="_blank">here</a></p>
+          <p>Designed and built by Matthew Tancik. View other projects at <a href='http://www.matthewtancik.com' target="_blank">www.matthewtancik.com</a></p>
+        </span>
+
+        <span ng-show="detailsState == 'submit'">
+          <form role="form" onSubmit="JavaScript:postContactToGoogle()">
+            <div class="form-group">
+              <label for="inputEmail3">Email (optional)</label>
+              <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+            </div>
+            <div class="form-group">
+              <label for="equationInput">Equation and Details</label>
+              <textarea class="form-control" id="equationInput" placeholder="Equation" rows="3" required></textarea>
+            </div>
+            <div class="form-group">
+              <label for="wikipediaLink">Wikipedia Link</label>
+              <input type="url" class="form-control" id="wikipediaLink" placeholder="Wikipedia Link">
+            </div>
+            <div class="form-group">
+              <button type="submit" class="btn btn-primary">Submit</button> 
+            </div>
+          </form>
+        </span>
+
         <h3>{{active.name}}</h3>
         <h6 class="details" ng-bind-html="to_trusted(active.details)"></h6>
         <a href="{{active.wikipedia}}" ng-show="active.wikipedia" target="_blank"><img src="/images/wikipedia.png" border="0" style="border:none;max-width:50%;"/></a>
