@@ -163,6 +163,33 @@
         "wolfram" : "http://mathworld.wolfram.com/Circle.html",
         "symbols": ["&pi;","r","a"],
         "types": ["All", "Math", "Geometry"]
+    }, 
+    {
+        "name": "Electric Power", 
+        "rep": "P = {QV \\over t} = IV",
+        "details": "Electric power is the rate at which electric energy is transferred by an electric circuit. The SI unit of power is the watt, one joule per second. Electric power is usually produced by electric generators, but can also be supplied by sources such as electric batteries.",
+        "wikipedia": "http://en.wikipedia.org/wiki/Electric_power",
+        "symbols": ["i","v","p","q","t"],
+        "types": ["All", "Electromagnetism", "Physics", "Electrical Engineering"]
+    }, 
+    {
+        "name": "Ohm's Law", 
+        "rep": "I = {V \\over R}",
+        "details": "Ohm's law states that the current through a conductor between two points is directly proportional to the potential difference across the two points. Introducing the constant of proportionality, the resistance, one arrives at the usual mathematical equation that describes this relationship.",
+        "wikipedia": "http://en.wikipedia.org/wiki/Ohm's_law",
+        "wolfram" : "http://scienceworld.wolfram.com/physics/OhmsLaw.html",
+        "symbols": ["v","r","i"],
+        "types": ["All", "Electromagnetism", "Physics", "Electrical Engineering"]
+    }, 
+    {
+        "name": "Young's Modulus", 
+        "rep": "E = { \\sigma \\over \\epsilon} = {F / A_0 \\over \\Delta L / L_0} = {F L_0 \\over A_0 \\Delta L}",
+        "details": "Young's modulus, also known as the Tensile modulus or elastic modulus, is a measure of the stiffness of an elastic isotropic material and is a quantity used to characterize materials. It is defined as the ratio of the stress along an axis over the strain along that axis in the range of stress in which Hooke's law holds.[1] In solid mechanics, the slope of the stress–strain curve at any point is called the tangent modulus. The tangent modulus of the initial, linear portion of a stress–strain curve is called Young's modulus.",
+        "wikipedia": "http://en.wikipedia.org/wiki/Young's_modulus",
+        "wolfram" : "http://scienceworld.wolfram.com/physics/YoungsModulus.html",
+        "symbols": ["&sigma;","e","&epsilon;","f","a","l","&Delta;"],
+        "types": ["All", "Physics", "Material Science"]
     }
+
 
 ]

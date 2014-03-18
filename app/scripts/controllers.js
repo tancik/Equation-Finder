@@ -63,6 +63,7 @@ equationFinder.controller('equationFinderCtrl', function($scope, $sce, $http) {
   $scope.detailsState = 'welcome';
   $scope.setDetailsState = function(state) {
     $scope.detailsState = state;
+    $scope.active = null;
   }
 
   $scope.selectedLetters = [];

@@ -6,12 +6,8 @@
   <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
   <link rel="stylesheet" href="styles/custom.css">
   <link rel="stylesheet" href="styles/flat-ui.css">
-  <script src="bower_components/jquery/dist/jquery.min.js"></script>
-  <script src="bower_components/angular/angular.js"></script>
-  <script src="bower_components/angular-sanitize/angular-sanitize.min.js"></script>
-  <script src="scripts/controllers.js"></script>
-  <script type="text/javascript" src="bower_components/bootstrap/js/dropdown.js"></script>
   <link href='http://fonts.googleapis.com/css?family=Gafata&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+  
 </head>
 <body ng-controller="equationFinderCtrl" style="padding-top: 60px;">
   <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
@@ -22,7 +18,7 @@
     </div>
     <div class="collapse navbar-collapse" id="navbar-collapse-01">
       <ul class="nav navbar-nav navbar-left">  
-        <span class="navbar-brand" style="padding-left: 40px;">Equation Finder</span>         
+        <li><label class="navbar-brand">Equation Finder</label></li>        
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">{{activeField}} <b class="caret"></b></a>
           <span class="dropdown-arrow"></span>
@@ -73,8 +69,8 @@
         <table class="table table-hover">
           <tr ng-click="selectEquation(equation)" ng-repeat="equation in filteredItems = (equations | filter:equationFilter | filter:query)  | limitTo:limit">
             <td>
-              <h4>{{equation.name}}</h4>
-              <h2 mathjax-bind="equation.rep"></h2>
+              <h5>{{equation.name}}</h5>
+              <h3 mathjax-bind="equation.rep"></h3>
             </td>
             <!-- <p>{{equation.rep}}</p> -->
           </tr>
@@ -119,7 +115,7 @@
         </span>
 
         <h3>{{active.name}}</h3>
-        <h6 class="details" ng-bind-html="to_trusted(active.details)"></h6>
+        <p class="details" ng-bind-html="to_trusted(active.details)"></p>
         <a href="{{active.wikipedia}}" ng-show="active.wikipedia" target="_blank"><img src="/images/wikipedia.png" border="0" style="border:none;max-width:50%;"/></a>
         <a href="{{active.wolfram}}" ng-show="active.wolfram" target="_blank"><img src="/images/wolfram.png" border="0" style="border:none;max-width:40%;"/></a>
       </div>
@@ -140,5 +136,10 @@
     ga('create', 'UA-46779055-2', 'equationfinder.com');
     ga('send', 'pageview');
   </script>
+  <script src="bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-sanitize/angular-sanitize.min.js"></script>
+  <script type="text/javascript" src="bower_components/bootstrap/js/dropdown.js"></script>
+  <script src="scripts/controllers.js"></script>
 </body>
 </html>

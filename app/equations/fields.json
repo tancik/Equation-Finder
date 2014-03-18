@@ -66,6 +66,20 @@
         "subType": []
     },
     {   
+        "name": "Economics",
+        "subType": [
+            {
+                "type": "Micro"
+            },
+            {
+                "type": "Macro"
+            },
+            {
+                "type": "Econometrics"
+            }
+        ]
+    },
+    {   
         "name": "Computer Science",
         "subType": []
     },
